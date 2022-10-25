@@ -29,20 +29,32 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            Microsoft.Reporting.WinForms.ReportDataSource reportDataSource2 = new Microsoft.Reporting.WinForms.ReportDataSource();
+            Microsoft.Reporting.WinForms.ReportDataSource reportDataSource1 = new Microsoft.Reporting.WinForms.ReportDataSource();
+            this.clientesPromedioBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.dtsReportesxsd = new LCI_GRUPO16_2.Datos.DtsReportesxsd();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.TxtCliente = new System.Windows.Forms.TextBox();
             this.BtnBuscar = new System.Windows.Forms.Button();
             this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.dtsReportesxsd = new LCI_GRUPO16_2.Datos.DtsReportesxsd();
-            this.clientesPromedioBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.clientesPromedioTableAdapter = new LCI_GRUPO16_2.Datos.DtsReportesxsdTableAdapters.ClientesPromedioTableAdapter();
-            this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dtsReportesxsd)).BeginInit();
+            this.clientesPromedioBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.clientesPromedioBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtsReportesxsd)).BeginInit();
+            this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.clientesPromedioBindingSource1)).BeginInit();
             this.SuspendLayout();
+            // 
+            // clientesPromedioBindingSource
+            // 
+            this.clientesPromedioBindingSource.DataMember = "ClientesPromedio";
+            this.clientesPromedioBindingSource.DataSource = this.dtsReportesxsd;
+            // 
+            // dtsReportesxsd
+            // 
+            this.dtsReportesxsd.DataSetName = "DtsReportesxsd";
+            this.dtsReportesxsd.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // label1
             // 
@@ -81,14 +93,14 @@
             // reportViewer1
             // 
             this.reportViewer1.Dock = System.Windows.Forms.DockStyle.Fill;
-            reportDataSource2.Name = "DataSet1";
-            reportDataSource2.Value = this.clientesPromedioBindingSource;
-            this.reportViewer1.LocalReport.DataSources.Add(reportDataSource2);
-            this.reportViewer1.LocalReport.ReportEmbeddedResource = "LCI_GRUPO16_2.Reportes.RptClientesLetra.rdlc";
+            reportDataSource1.Name = "DataSet1";
+            reportDataSource1.Value = this.clientesPromedioBindingSource;
+            this.reportViewer1.LocalReport.DataSources.Add(reportDataSource1);
+            this.reportViewer1.LocalReport.ReportEmbeddedResource = "LCI_GRUPO16_2.Reportes.RptClientesPromedio.rdlc";
             this.reportViewer1.Location = new System.Drawing.Point(3, 18);
             this.reportViewer1.Name = "reportViewer1";
             this.reportViewer1.ServerReport.BearerToken = null;
-            this.reportViewer1.Size = new System.Drawing.Size(770, 326);
+            this.reportViewer1.Size = new System.Drawing.Size(811, 326);
             this.reportViewer1.TabIndex = 4;
             // 
             // groupBox1
@@ -96,29 +108,24 @@
             this.groupBox1.Controls.Add(this.reportViewer1);
             this.groupBox1.Location = new System.Drawing.Point(12, 91);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(776, 347);
+            this.groupBox1.Size = new System.Drawing.Size(817, 347);
             this.groupBox1.TabIndex = 5;
             this.groupBox1.TabStop = false;
-            // 
-            // dtsReportesxsd
-            // 
-            this.dtsReportesxsd.DataSetName = "DtsReportesxsd";
-            this.dtsReportesxsd.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // clientesPromedioBindingSource
-            // 
-            this.clientesPromedioBindingSource.DataMember = "ClientesPromedio";
-            this.clientesPromedioBindingSource.DataSource = this.dtsReportesxsd;
             // 
             // clientesPromedioTableAdapter
             // 
             this.clientesPromedioTableAdapter.ClearBeforeFill = true;
             // 
+            // clientesPromedioBindingSource1
+            // 
+            this.clientesPromedioBindingSource1.DataMember = "ClientesPromedio";
+            this.clientesPromedioBindingSource1.DataSource = this.dtsReportesxsd;
+            // 
             // FrmClientesLetra
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(798, 448);
+            this.ClientSize = new System.Drawing.Size(841, 448);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.BtnBuscar);
             this.Controls.Add(this.TxtCliente);
@@ -127,9 +134,10 @@
             this.Name = "FrmClientesLetra";
             this.Text = "FrmClientesLetra";
             this.Load += new System.EventHandler(this.FrmClientesLetra_Load);
-            this.groupBox1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dtsReportesxsd)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.clientesPromedioBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtsReportesxsd)).EndInit();
+            this.groupBox1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.clientesPromedioBindingSource1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -146,5 +154,6 @@
         private System.Windows.Forms.BindingSource clientesPromedioBindingSource;
         private Datos.DtsReportesxsd dtsReportesxsd;
         private Datos.DtsReportesxsdTableAdapters.ClientesPromedioTableAdapter clientesPromedioTableAdapter;
+        private System.Windows.Forms.BindingSource clientesPromedioBindingSource1;
     }
 }

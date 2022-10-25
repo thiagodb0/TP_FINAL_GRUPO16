@@ -34,8 +34,10 @@
             this.dtsReportesxsd = new LCI_GRUPO16_2.Datos.DtsReportesxsd();
             this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
             this.facturadoXVendedorTableAdapter = new LCI_GRUPO16_2.Datos.DtsReportesxsdTableAdapters.FacturadoXVendedorTableAdapter();
+            this.facturadoXVendedorBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.facturadoXVendedorBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dtsReportesxsd)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.facturadoXVendedorBindingSource1)).BeginInit();
             this.SuspendLayout();
             // 
             // facturadoXVendedorBindingSource
@@ -54,7 +56,7 @@
             reportDataSource1.Name = "DataSet1";
             reportDataSource1.Value = this.facturadoXVendedorBindingSource;
             this.reportViewer1.LocalReport.DataSources.Add(reportDataSource1);
-            this.reportViewer1.LocalReport.ReportEmbeddedResource = "LCI_GRUPO16_2.Reportes.RptFactVendedor.rdlc";
+            this.reportViewer1.LocalReport.ReportEmbeddedResource = "LCI_GRUPO16_2.Reportes.RptFactXVend.rdlc";
             this.reportViewer1.Location = new System.Drawing.Point(0, 0);
             this.reportViewer1.Name = "reportViewer1";
             this.reportViewer1.ServerReport.BearerToken = null;
@@ -65,6 +67,11 @@
             // facturadoXVendedorTableAdapter
             // 
             this.facturadoXVendedorTableAdapter.ClearBeforeFill = true;
+            // 
+            // facturadoXVendedorBindingSource1
+            // 
+            this.facturadoXVendedorBindingSource1.DataMember = "FacturadoXVendedor";
+            this.facturadoXVendedorBindingSource1.DataSource = this.dtsReportesxsd;
             // 
             // FrmFactVendedor
             // 
@@ -77,6 +84,7 @@
             this.Load += new System.EventHandler(this.FrmFactVendedor_Load);
             ((System.ComponentModel.ISupportInitialize)(this.facturadoXVendedorBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dtsReportesxsd)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.facturadoXVendedorBindingSource1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -87,5 +95,6 @@
         private Datos.DtsReportesxsd dtsReportesxsd;
         private System.Windows.Forms.BindingSource facturadoXVendedorBindingSource;
         private Datos.DtsReportesxsdTableAdapters.FacturadoXVendedorTableAdapter facturadoXVendedorTableAdapter;
+        private System.Windows.Forms.BindingSource facturadoXVendedorBindingSource1;
     }
 }

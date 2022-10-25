@@ -29,19 +29,29 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            Microsoft.Reporting.WinForms.ReportDataSource reportDataSource5 = new Microsoft.Reporting.WinForms.ReportDataSource();
+            Microsoft.Reporting.WinForms.ReportDataSource reportDataSource1 = new Microsoft.Reporting.WinForms.ReportDataSource();
+            this.clientesCantComprasBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.dtsReportesxsd = new LCI_GRUPO16_2.Datos.DtsReportesxsd();
             this.label1 = new System.Windows.Forms.Label();
             this.TxtCantidad = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.BtnBuscar = new System.Windows.Forms.Button();
             this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
-            this.dtsReportesxsd = new LCI_GRUPO16_2.Datos.DtsReportesxsd();
-            this.clientesCantComprasBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.clientesCantComprasTableAdapter = new LCI_GRUPO16_2.Datos.DtsReportesxsdTableAdapters.clientesCantComprasTableAdapter();
-            ((System.ComponentModel.ISupportInitialize)(this.dtsReportesxsd)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.clientesCantComprasBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtsReportesxsd)).BeginInit();
             this.SuspendLayout();
+            // 
+            // clientesCantComprasBindingSource
+            // 
+            this.clientesCantComprasBindingSource.DataMember = "clientesCantCompras";
+            this.clientesCantComprasBindingSource.DataSource = this.dtsReportesxsd;
+            // 
+            // dtsReportesxsd
+            // 
+            this.dtsReportesxsd.DataSetName = "DtsReportesxsd";
+            this.dtsReportesxsd.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // label1
             // 
@@ -95,25 +105,15 @@
             // 
             // reportViewer1
             // 
-            reportDataSource5.Name = "DataSet1";
-            reportDataSource5.Value = this.clientesCantComprasBindingSource;
-            this.reportViewer1.LocalReport.DataSources.Add(reportDataSource5);
+            reportDataSource1.Name = "DataSet1";
+            reportDataSource1.Value = this.clientesCantComprasBindingSource;
+            this.reportViewer1.LocalReport.DataSources.Add(reportDataSource1);
             this.reportViewer1.LocalReport.ReportEmbeddedResource = "LCI_GRUPO16_2.Reportes.RptClientesCant.rdlc";
             this.reportViewer1.Location = new System.Drawing.Point(12, 92);
             this.reportViewer1.Name = "reportViewer1";
             this.reportViewer1.ServerReport.BearerToken = null;
-            this.reportViewer1.Size = new System.Drawing.Size(776, 350);
+            this.reportViewer1.Size = new System.Drawing.Size(817, 350);
             this.reportViewer1.TabIndex = 5;
-            // 
-            // dtsReportesxsd
-            // 
-            this.dtsReportesxsd.DataSetName = "DtsReportesxsd";
-            this.dtsReportesxsd.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // clientesCantComprasBindingSource
-            // 
-            this.clientesCantComprasBindingSource.DataMember = "clientesCantCompras";
-            this.clientesCantComprasBindingSource.DataSource = this.dtsReportesxsd;
             // 
             // clientesCantComprasTableAdapter
             // 
@@ -124,7 +124,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(841, 450);
             this.Controls.Add(this.reportViewer1);
             this.Controls.Add(this.BtnBuscar);
             this.Controls.Add(this.label3);
@@ -134,8 +134,8 @@
             this.Name = "FrmClienteCantidad";
             this.Text = "FrmClienteCantidad";
             this.Load += new System.EventHandler(this.FrmClienteCantidad_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dtsReportesxsd)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.clientesCantComprasBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtsReportesxsd)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

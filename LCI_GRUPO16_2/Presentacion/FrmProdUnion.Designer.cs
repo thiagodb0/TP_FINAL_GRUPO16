@@ -29,21 +29,31 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            Microsoft.Reporting.WinForms.ReportDataSource reportDataSource2 = new Microsoft.Reporting.WinForms.ReportDataSource();
+            Microsoft.Reporting.WinForms.ReportDataSource reportDataSource1 = new Microsoft.Reporting.WinForms.ReportDataSource();
+            this.Produstos_no_vendidos_Y_VendidosBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.dtsReportesxsd = new LCI_GRUPO16_2.Datos.DtsReportesxsd();
             this.label1 = new System.Windows.Forms.Label();
             this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
-            this.dtsReportesxsd = new LCI_GRUPO16_2.Datos.DtsReportesxsd();
             this.produstosnovendidosYVendidosBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.produstos_no_vendidos_Y_VendidosTableAdapter = new LCI_GRUPO16_2.Datos.DtsReportesxsdTableAdapters.Produstos_no_vendidos_Y_VendidosTableAdapter();
-            this.Produstos_no_vendidos_Y_VendidosBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.label2 = new System.Windows.Forms.Label();
             this.NumCantidad = new System.Windows.Forms.NumericUpDown();
             this.BtnBuscar = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.Produstos_no_vendidos_Y_VendidosBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dtsReportesxsd)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.produstosnovendidosYVendidosBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Produstos_no_vendidos_Y_VendidosBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.NumCantidad)).BeginInit();
             this.SuspendLayout();
+            // 
+            // Produstos_no_vendidos_Y_VendidosBindingSource
+            // 
+            this.Produstos_no_vendidos_Y_VendidosBindingSource.DataMember = "Produstos_no_vendidos_Y_Vendidos";
+            this.Produstos_no_vendidos_Y_VendidosBindingSource.DataSource = this.dtsReportesxsd;
+            // 
+            // dtsReportesxsd
+            // 
+            this.dtsReportesxsd.DataSetName = "DtsReportesxsd";
+            this.dtsReportesxsd.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // label1
             // 
@@ -58,20 +68,15 @@
             // 
             // reportViewer1
             // 
-            reportDataSource2.Name = "DataSet1";
-            reportDataSource2.Value = this.Produstos_no_vendidos_Y_VendidosBindingSource;
-            this.reportViewer1.LocalReport.DataSources.Add(reportDataSource2);
+            reportDataSource1.Name = "DataSet1";
+            reportDataSource1.Value = this.Produstos_no_vendidos_Y_VendidosBindingSource;
+            this.reportViewer1.LocalReport.DataSources.Add(reportDataSource1);
             this.reportViewer1.LocalReport.ReportEmbeddedResource = "LCI_GRUPO16_2.Reportes.RptProdUnion.rdlc";
             this.reportViewer1.Location = new System.Drawing.Point(12, 105);
             this.reportViewer1.Name = "reportViewer1";
             this.reportViewer1.ServerReport.BearerToken = null;
-            this.reportViewer1.Size = new System.Drawing.Size(776, 333);
+            this.reportViewer1.Size = new System.Drawing.Size(823, 333);
             this.reportViewer1.TabIndex = 1;
-            // 
-            // dtsReportesxsd
-            // 
-            this.dtsReportesxsd.DataSetName = "DtsReportesxsd";
-            this.dtsReportesxsd.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // produstosnovendidosYVendidosBindingSource
             // 
@@ -81,11 +86,6 @@
             // produstos_no_vendidos_Y_VendidosTableAdapter
             // 
             this.produstos_no_vendidos_Y_VendidosTableAdapter.ClearBeforeFill = true;
-            // 
-            // Produstos_no_vendidos_Y_VendidosBindingSource
-            // 
-            this.Produstos_no_vendidos_Y_VendidosBindingSource.DataMember = "Produstos_no_vendidos_Y_Vendidos";
-            this.Produstos_no_vendidos_Y_VendidosBindingSource.DataSource = this.dtsReportesxsd;
             // 
             // label2
             // 
@@ -122,7 +122,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(847, 450);
             this.Controls.Add(this.BtnBuscar);
             this.Controls.Add(this.NumCantidad);
             this.Controls.Add(this.label2);
@@ -131,9 +131,9 @@
             this.Name = "FrmProdUnion";
             this.Text = "FrmProdUnion";
             this.Load += new System.EventHandler(this.FrmProdUnion_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.Produstos_no_vendidos_Y_VendidosBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dtsReportesxsd)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.produstosnovendidosYVendidosBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Produstos_no_vendidos_Y_VendidosBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.NumCantidad)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

@@ -165,12 +165,12 @@
     </Compile>
     <EmbeddedResource Include="Reportes\RptAutosNoVend.rdlc" />
     <EmbeddedResource Include="Reportes\RptClientesCant.rdlc" />
-    <EmbeddedResource Include="Reportes\RptClientesLetra.rdlc" />
-    <EmbeddedResource Include="Reportes\RptFactVendedor.rdlc" />
-    <EmbeddedResource Include="Reportes\RptFactxMes.rdlc" />
-    <EmbeddedResource Include="Reportes\RptfechaVend.rdlc" />
+    <EmbeddedResource Include="Reportes\RptClientesPromedio.rdlc" />
+    <EmbeddedResource Include="Reportes\RptFactXVend.rdlc" />
+    <EmbeddedResource Include="Reportes\RptFechaVendedores.rdlc" />
     <EmbeddedResource Include="Reportes\RptProdPromedio.rdlc" />
     <EmbeddedResource Include="Reportes\RptProdUnion.rdlc" />
+    <EmbeddedResource Include="Reportes\RptPromedioMes.rdlc" />
     <None Include="Datos\DtsReportesxsd.xsc">
       <DependentUpon>DtsReportesxsd.xsd</DependentUpon>
     </None>

@@ -29,16 +29,18 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            Microsoft.Reporting.WinForms.ReportDataSource reportDataSource2 = new Microsoft.Reporting.WinForms.ReportDataSource();
+            Microsoft.Reporting.WinForms.ReportDataSource reportDataSource1 = new Microsoft.Reporting.WinForms.ReportDataSource();
             this.txtCodigo = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.btnBuscar = new System.Windows.Forms.Button();
             this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
-            this.dtsReportesxsd = new LCI_GRUPO16_2.Datos.DtsReportesxsd();
             this.fechaVendedoresBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.dtsReportesxsd = new LCI_GRUPO16_2.Datos.DtsReportesxsd();
             this.fechaVendedoresTableAdapter = new LCI_GRUPO16_2.Datos.DtsReportesxsdTableAdapters.FechaVendedoresTableAdapter();
-            ((System.ComponentModel.ISupportInitialize)(this.dtsReportesxsd)).BeginInit();
+            this.fechaVendedoresBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.fechaVendedoresBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtsReportesxsd)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.fechaVendedoresBindingSource1)).BeginInit();
             this.SuspendLayout();
             // 
             // txtCodigo
@@ -69,35 +71,40 @@
             // 
             // reportViewer1
             // 
-            reportDataSource2.Name = "DataSet1";
-            reportDataSource2.Value = this.fechaVendedoresBindingSource;
-            this.reportViewer1.LocalReport.DataSources.Add(reportDataSource2);
-            this.reportViewer1.LocalReport.ReportEmbeddedResource = "LCI_GRUPO16_2.Reportes.RptfechaVend.rdlc";
+            reportDataSource1.Name = "DataSet1";
+            reportDataSource1.Value = this.fechaVendedoresBindingSource;
+            this.reportViewer1.LocalReport.DataSources.Add(reportDataSource1);
+            this.reportViewer1.LocalReport.ReportEmbeddedResource = "LCI_GRUPO16_2.Reportes.RptFechaVendedores.rdlc";
             this.reportViewer1.Location = new System.Drawing.Point(12, 97);
             this.reportViewer1.Name = "reportViewer1";
             this.reportViewer1.ServerReport.BearerToken = null;
-            this.reportViewer1.Size = new System.Drawing.Size(776, 341);
+            this.reportViewer1.Size = new System.Drawing.Size(817, 341);
             this.reportViewer1.TabIndex = 3;
-            // 
-            // dtsReportesxsd
-            // 
-            this.dtsReportesxsd.DataSetName = "DtsReportesxsd";
-            this.dtsReportesxsd.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // fechaVendedoresBindingSource
             // 
             this.fechaVendedoresBindingSource.DataMember = "FechaVendedores";
             this.fechaVendedoresBindingSource.DataSource = this.dtsReportesxsd;
             // 
+            // dtsReportesxsd
+            // 
+            this.dtsReportesxsd.DataSetName = "DtsReportesxsd";
+            this.dtsReportesxsd.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
             // fechaVendedoresTableAdapter
             // 
             this.fechaVendedoresTableAdapter.ClearBeforeFill = true;
+            // 
+            // fechaVendedoresBindingSource1
+            // 
+            this.fechaVendedoresBindingSource1.DataMember = "FechaVendedores";
+            this.fechaVendedoresBindingSource1.DataSource = this.dtsReportesxsd;
             // 
             // FrmFechaVendedorescs
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(841, 450);
             this.Controls.Add(this.reportViewer1);
             this.Controls.Add(this.btnBuscar);
             this.Controls.Add(this.label1);
@@ -105,8 +112,9 @@
             this.Name = "FrmFechaVendedorescs";
             this.Text = "FrmFechaVendedorescs";
             this.Load += new System.EventHandler(this.FrmFechaVendedorescs_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dtsReportesxsd)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.fechaVendedoresBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtsReportesxsd)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.fechaVendedoresBindingSource1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -121,5 +129,6 @@
         private System.Windows.Forms.BindingSource fechaVendedoresBindingSource;
         private Datos.DtsReportesxsd dtsReportesxsd;
         private Datos.DtsReportesxsdTableAdapters.FechaVendedoresTableAdapter fechaVendedoresTableAdapter;
+        private System.Windows.Forms.BindingSource fechaVendedoresBindingSource1;
     }
 }

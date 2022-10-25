@@ -30,19 +30,31 @@
         {
             this.components = new System.ComponentModel.Container();
             Microsoft.Reporting.WinForms.ReportDataSource reportDataSource1 = new Microsoft.Reporting.WinForms.ReportDataSource();
+            this.promedioMesBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.dtsReportesxsd = new LCI_GRUPO16_2.Datos.DtsReportesxsd();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.TxtAnio1 = new System.Windows.Forms.TextBox();
             this.TxtAnio2 = new System.Windows.Forms.TextBox();
             this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
-            this.dtsReportesxsd = new LCI_GRUPO16_2.Datos.DtsReportesxsd();
-            this.promedioMesBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.promedioMesTableAdapter = new LCI_GRUPO16_2.Datos.DtsReportesxsdTableAdapters.PromedioMesTableAdapter();
             this.BtnBuscar = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dtsReportesxsd)).BeginInit();
+            this.promedioMesBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.promedioMesBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtsReportesxsd)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.promedioMesBindingSource1)).BeginInit();
             this.SuspendLayout();
+            // 
+            // promedioMesBindingSource
+            // 
+            this.promedioMesBindingSource.DataMember = "PromedioMes";
+            this.promedioMesBindingSource.DataSource = this.dtsReportesxsd;
+            // 
+            // dtsReportesxsd
+            // 
+            this.dtsReportesxsd.DataSetName = "DtsReportesxsd";
+            this.dtsReportesxsd.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // label1
             // 
@@ -90,22 +102,12 @@
             reportDataSource1.Name = "DataSet1";
             reportDataSource1.Value = this.promedioMesBindingSource;
             this.reportViewer1.LocalReport.DataSources.Add(reportDataSource1);
-            this.reportViewer1.LocalReport.ReportEmbeddedResource = "LCI_GRUPO16_2.Reportes.RptFactxMes.rdlc";
+            this.reportViewer1.LocalReport.ReportEmbeddedResource = "LCI_GRUPO16_2.Reportes.RptPromedioMes.rdlc";
             this.reportViewer1.Location = new System.Drawing.Point(12, 103);
             this.reportViewer1.Name = "reportViewer1";
             this.reportViewer1.ServerReport.BearerToken = null;
-            this.reportViewer1.Size = new System.Drawing.Size(776, 335);
+            this.reportViewer1.Size = new System.Drawing.Size(817, 335);
             this.reportViewer1.TabIndex = 5;
-            // 
-            // dtsReportesxsd
-            // 
-            this.dtsReportesxsd.DataSetName = "DtsReportesxsd";
-            this.dtsReportesxsd.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // promedioMesBindingSource
-            // 
-            this.promedioMesBindingSource.DataMember = "PromedioMes";
-            this.promedioMesBindingSource.DataSource = this.dtsReportesxsd;
             // 
             // promedioMesTableAdapter
             // 
@@ -121,11 +123,16 @@
             this.BtnBuscar.UseVisualStyleBackColor = true;
             this.BtnBuscar.Click += new System.EventHandler(this.BtnBuscar_Click);
             // 
+            // promedioMesBindingSource1
+            // 
+            this.promedioMesBindingSource1.DataMember = "PromedioMes";
+            this.promedioMesBindingSource1.DataSource = this.dtsReportesxsd;
+            // 
             // FrmFactxMes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(841, 450);
             this.Controls.Add(this.BtnBuscar);
             this.Controls.Add(this.reportViewer1);
             this.Controls.Add(this.TxtAnio2);
@@ -136,8 +143,9 @@
             this.Name = "FrmFactxMes";
             this.Text = "FrmFactxMes";
             this.Load += new System.EventHandler(this.FrmFactxMes_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dtsReportesxsd)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.promedioMesBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtsReportesxsd)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.promedioMesBindingSource1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -155,5 +163,6 @@
         private Datos.DtsReportesxsd dtsReportesxsd;
         private Datos.DtsReportesxsdTableAdapters.PromedioMesTableAdapter promedioMesTableAdapter;
         private System.Windows.Forms.Button BtnBuscar;
+        private System.Windows.Forms.BindingSource promedioMesBindingSource1;
     }
 }

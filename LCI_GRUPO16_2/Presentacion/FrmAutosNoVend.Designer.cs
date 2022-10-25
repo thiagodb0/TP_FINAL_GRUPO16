@@ -30,13 +30,23 @@
         {
             this.components = new System.ComponentModel.Container();
             Microsoft.Reporting.WinForms.ReportDataSource reportDataSource1 = new Microsoft.Reporting.WinForms.ReportDataSource();
-            this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
-            this.dtsReportesxsd = new LCI_GRUPO16_2.Datos.DtsReportesxsd();
             this.autosSinVenderBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.dtsReportesxsd = new LCI_GRUPO16_2.Datos.DtsReportesxsd();
+            this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
             this.autosSinVenderTableAdapter = new LCI_GRUPO16_2.Datos.DtsReportesxsdTableAdapters.AutosSinVenderTableAdapter();
-            ((System.ComponentModel.ISupportInitialize)(this.dtsReportesxsd)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.autosSinVenderBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtsReportesxsd)).BeginInit();
             this.SuspendLayout();
+            // 
+            // autosSinVenderBindingSource
+            // 
+            this.autosSinVenderBindingSource.DataMember = "AutosSinVender";
+            this.autosSinVenderBindingSource.DataSource = this.dtsReportesxsd;
+            // 
+            // dtsReportesxsd
+            // 
+            this.dtsReportesxsd.DataSetName = "DtsReportesxsd";
+            this.dtsReportesxsd.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // reportViewer1
             // 
@@ -48,18 +58,8 @@
             this.reportViewer1.Location = new System.Drawing.Point(0, 0);
             this.reportViewer1.Name = "reportViewer1";
             this.reportViewer1.ServerReport.BearerToken = null;
-            this.reportViewer1.Size = new System.Drawing.Size(800, 450);
+            this.reportViewer1.Size = new System.Drawing.Size(841, 450);
             this.reportViewer1.TabIndex = 0;
-            // 
-            // dtsReportesxsd
-            // 
-            this.dtsReportesxsd.DataSetName = "DtsReportesxsd";
-            this.dtsReportesxsd.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // autosSinVenderBindingSource
-            // 
-            this.autosSinVenderBindingSource.DataMember = "AutosSinVender";
-            this.autosSinVenderBindingSource.DataSource = this.dtsReportesxsd;
             // 
             // autosSinVenderTableAdapter
             // 
@@ -69,13 +69,13 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(841, 450);
             this.Controls.Add(this.reportViewer1);
             this.Name = "FrmAutosNoVend";
             this.Text = "Autos No Vendidos";
             this.Load += new System.EventHandler(this.FrmAutosNoVend_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dtsReportesxsd)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.autosSinVenderBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtsReportesxsd)).EndInit();
             this.ResumeLayout(false);
 
         }

@@ -385,7 +385,7 @@
             <Paragraph>
               <TextRuns>
                 <TextRun>
-                  <Value>Total facturado por vendedor</Value>
+                  <Value>Total y Promedio facturado por vendedor</Value>
                   <Style>
                     <FontFamily>Microsoft YaHei</FontFamily>
                     <FontSize>16pt</FontSize>
@@ -398,9 +398,9 @@
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>Textbox7</rd:DefaultName>
-          <Top>0.79587cm</Top>
+          <Top>0.41487cm</Top>
           <Left>4.03436cm</Left>
-          <Height>0.981cm</Height>
+          <Height>1.63717cm</Height>
           <Width>10.5645cm</Width>
           <Style>
             <Border>

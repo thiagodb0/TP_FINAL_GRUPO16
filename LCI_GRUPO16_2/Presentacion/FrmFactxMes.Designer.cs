@@ -111,10 +111,10 @@
             reportDataSource1.Value = this.promedioMesBindingSource;
             this.reportViewer1.LocalReport.DataSources.Add(reportDataSource1);
             this.reportViewer1.LocalReport.ReportEmbeddedResource = "LCI_GRUPO16_2.Reportes.RptPromedioMes.rdlc";
-            this.reportViewer1.Location = new System.Drawing.Point(12, 103);
+            this.reportViewer1.Location = new System.Drawing.Point(16, 114);
             this.reportViewer1.Name = "reportViewer1";
             this.reportViewer1.ServerReport.BearerToken = null;
-            this.reportViewer1.Size = new System.Drawing.Size(817, 335);
+            this.reportViewer1.Size = new System.Drawing.Size(861, 505);
             this.reportViewer1.TabIndex = 5;
             // 
             // promedioMesTableAdapter
@@ -139,19 +139,20 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::LCI_GRUPO16_2.Properties.Resources.Logo_Corporativo_Estudio_Elegante_Profesional_Blanco_Negro;
-            this.pictureBox1.Location = new System.Drawing.Point(565, -147);
+            this.pictureBox1.Location = new System.Drawing.Point(616, -145);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(399, 383);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 7;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // FrmFactxMes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.ClientSize = new System.Drawing.Size(841, 450);
+            this.ClientSize = new System.Drawing.Size(894, 631);
             this.Controls.Add(this.BtnBuscar);
             this.Controls.Add(this.reportViewer1);
             this.Controls.Add(this.TxtAnio2);
@@ -161,7 +162,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
             this.Name = "FrmFactxMes";
-            this.Text = "FrmFactxMes";
+            this.Text = "Factura Por Mes";
             this.Load += new System.EventHandler(this.FrmFactxMes_Load);
             ((System.ComponentModel.ISupportInitialize)(this.promedioMesBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dtsReportesxsd)).EndInit();

@@ -61,7 +61,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(13, 13);
+            this.label1.Location = new System.Drawing.Point(4, 6);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(556, 38);
             this.label1.TabIndex = 0;
@@ -125,7 +125,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::LCI_GRUPO16_2.Properties.Resources.Logo_Corporativo_Estudio_Elegante_Profesional_Blanco_Negro;
-            this.pictureBox1.Location = new System.Drawing.Point(586, -121);
+            this.pictureBox1.Location = new System.Drawing.Point(592, -121);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(387, 337);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -146,7 +146,7 @@
             this.Controls.Add(this.pictureBox1);
             this.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.Name = "FrmProdUnion";
-            this.Text = "FrmProdUnion";
+            this.Text = "Productos";
             this.Load += new System.EventHandler(this.FrmProdUnion_Load);
             ((System.ComponentModel.ISupportInitialize)(this.Produstos_no_vendidos_Y_VendidosBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dtsReportesxsd)).EndInit();

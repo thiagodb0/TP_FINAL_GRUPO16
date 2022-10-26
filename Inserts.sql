@@ -2621,8 +2621,99 @@ INSERT INTO detalle_factura(cantidad, precio_venta, cod_factura, cod_producto) V
 INSERT INTO detalle_factura(cantidad, precio_venta, cod_factura, cod_producto) VALUES ( 4, 16000000, 5, 2);
 INSERT INTO detalle_factura(cantidad, precio_venta, cod_factura, cod_producto) VALUES ( 3, 30000, 7, 1);
 
+----------------Facturas----------------
+
+INSERT INTO factura(fecha, cod_cliente, cod_forma_pago, cod_plan, cod_vendedor) VALUES ('13/07/2017', 4, 1, 7, 2);
+	INSERT INTO detalle_factura(cantidad, precio_venta, cod_factura, cod_producto) VALUES ( 3, 100000, 8, 4);
+	INSERT INTO detalle_factura(cantidad, precio_venta, cod_factura, cod_producto) VALUES ( 1, 1200000, 8, 2);
+
+INSERT INTO factura(fecha, cod_cliente, cod_forma_pago, cod_plan, cod_vendedor) VALUES ('16/08/2017', 1, 1, 7, 1);
+	INSERT INTO detalle_factura(cantidad, precio_venta, cod_factura, cod_producto) VALUES ( 3, 100000, 9, 4);
+	INSERT INTO detalle_factura(cantidad, precio_venta, cod_factura, cod_producto) VALUES ( 1, 1200000, 9, 2);
+
+INSERT INTO factura(fecha, cod_cliente, cod_forma_pago, cod_plan, cod_vendedor) VALUES ('10/09/2017', 2, 2, 2, 2);
+	INSERT INTO detalle_factura(cantidad, precio_venta, cod_factura, cod_producto) VALUES ( 3, 200000, 10, 4);
+	INSERT INTO detalle_factura(cantidad, precio_venta, cod_factura, cod_producto) VALUES ( 2, 200000, 10, 2);
+
+INSERT INTO factura(fecha, cod_cliente, cod_forma_pago, cod_plan, cod_vendedor) VALUES ('31/10/2017', 3, 3, 3, 4);
+	INSERT INTO detalle_factura(cantidad, precio_venta, cod_factura, cod_producto) VALUES ( 3, 300000, 11, 4);
+	INSERT INTO detalle_factura(cantidad, precio_venta, cod_factura, cod_producto) VALUES ( 2, 300000, 11, 9);
+
+INSERT INTO factura(fecha, cod_cliente, cod_forma_pago, cod_plan, cod_vendedor) VALUES ('12/12/2017', 4, 4, 5, 5);
+	INSERT INTO detalle_factura(cantidad, precio_venta, cod_factura, cod_producto) VALUES ( 3, 100000, 12, 7);
+	INSERT INTO detalle_factura(cantidad, precio_venta, cod_factura, cod_producto) VALUES ( 2, 120000, 12, 2);
+
+INSERT INTO factura(fecha, cod_cliente, cod_forma_pago, cod_plan, cod_vendedor) VALUES ('10/02/2018', 5, 4, 1, 3);
+	INSERT INTO detalle_factura(cantidad, precio_venta, cod_factura, cod_producto) VALUES ( 10, 10000, 13, 2);
+	INSERT INTO detalle_factura(cantidad, precio_venta, cod_factura, cod_producto) VALUES ( 9, 270000, 13, 1);
+
+INSERT INTO factura(fecha, cod_cliente, cod_forma_pago, cod_plan, cod_vendedor) VALUES ('14/05/2018', 2, 3, 3, 2);
+	INSERT INTO detalle_factura(cantidad, precio_venta, cod_factura, cod_producto) VALUES ( 3, 200000, 14, 4);
+	INSERT INTO detalle_factura(cantidad, precio_venta, cod_factura, cod_producto) VALUES ( 2, 200000, 14, 2);
+
+INSERT INTO factura(fecha, cod_cliente, cod_forma_pago, cod_plan, cod_vendedor) VALUES ('1/09/2018', 1, 1, 1, 1);
+	INSERT INTO detalle_factura(cantidad, precio_venta, cod_factura, cod_producto) VALUES ( 7, 220000, 15, 4);
+	INSERT INTO detalle_factura(cantidad, precio_venta, cod_factura, cod_producto) VALUES ( 1, 210000, 15, 3);
+
+INSERT INTO factura(fecha, cod_cliente, cod_forma_pago, cod_plan, cod_vendedor) VALUES ('11/02/2019', 1, 2, 3, 4);
+	INSERT INTO detalle_factura(cantidad, precio_venta, cod_factura, cod_producto) VALUES ( 4, 290000, 16, 6);
+	INSERT INTO detalle_factura(cantidad, precio_venta, cod_factura, cod_producto) VALUES ( 5, 290000, 16, 4);
+
+INSERT INTO factura(fecha, cod_cliente, cod_forma_pago, cod_plan, cod_vendedor) VALUES ('28/06/2019', 4, 3, 2, 1);
+	INSERT INTO detalle_factura(cantidad, precio_venta, cod_factura, cod_producto) VALUES ( 3, 980000, 17, 2);
+	INSERT INTO detalle_factura(cantidad, precio_venta, cod_factura, cod_producto) VALUES ( 7, 340000, 17, 6);
+
+INSERT INTO factura(fecha, cod_cliente, cod_forma_pago, cod_plan, cod_vendedor) VALUES ('27/09/2019', 1, 2, 1, 2);
+	INSERT INTO detalle_factura(cantidad, precio_venta, cod_factura, cod_producto) VALUES ( 5, 250000, 18, 2);
+	INSERT INTO detalle_factura(cantidad, precio_venta, cod_factura, cod_producto) VALUES ( 1, 300000, 18, 1);
+
+INSERT INTO factura(fecha, cod_cliente, cod_forma_pago, cod_plan, cod_vendedor) VALUES ('19/12/2019', 8, 2, 5, 1);
+	INSERT INTO detalle_factura(cantidad, precio_venta, cod_factura, cod_producto) VALUES ( 6, 100000, 19, 6);
+	INSERT INTO detalle_factura(cantidad, precio_venta, cod_factura, cod_producto) VALUES ( 2, 500000, 19, 5);
+
+INSERT INTO factura(fecha, cod_cliente, cod_forma_pago, cod_plan, cod_vendedor) VALUES ('10/03/2020', 7, 4, 3, 2);
+	INSERT INTO detalle_factura(cantidad, precio_venta, cod_factura, cod_producto) VALUES ( 3, 100000, 20, 4);
+	INSERT INTO detalle_factura(cantidad, precio_venta, cod_factura, cod_producto) VALUES ( 5, 280000, 20, 2);
+
+INSERT INTO factura(fecha, cod_cliente, cod_forma_pago, cod_plan, cod_vendedor) VALUES ('28/06/2020', 5, 3, 1, 6);
+	INSERT INTO detalle_factura(cantidad, precio_venta, cod_factura, cod_producto) VALUES ( 7, 50000, 21, 1);
+	INSERT INTO detalle_factura(cantidad, precio_venta, cod_factura, cod_producto) VALUES ( 5, 280000, 21, 2);
+
+INSERT INTO factura(fecha, cod_cliente, cod_forma_pago, cod_plan, cod_vendedor) VALUES ('10/09/2020', 6, 3, 3, 2);
+	INSERT INTO detalle_factura(cantidad, precio_venta, cod_factura, cod_producto) VALUES ( 3, 100000, 20, 4);
+	INSERT INTO detalle_factura(cantidad, precio_venta, cod_factura, cod_producto) VALUES ( 5, 280000, 20, 2);
+
+INSERT INTO factura(fecha, cod_cliente, cod_forma_pago, cod_plan, cod_vendedor) VALUES ('13/12/2020', 2, 5, 3, 6);
+	INSERT INTO detalle_factura(cantidad, precio_venta, cod_factura, cod_producto) VALUES ( 2, 100000, 22, 2);
+	INSERT INTO detalle_factura(cantidad, precio_venta, cod_factura, cod_producto) VALUES ( 4, 280000, 22, 3);
+
+INSERT INTO factura(fecha, cod_cliente, cod_forma_pago, cod_plan, cod_vendedor) VALUES ('10/02/2021', 7, 4, 3, 2);
+	INSERT INTO detalle_factura(cantidad, precio_venta, cod_factura, cod_producto) VALUES ( 3, 100000, 20, 4);
+	INSERT INTO detalle_factura(cantidad, precio_venta, cod_factura, cod_producto) VALUES ( 5, 280000, 20, 2);
+
+INSERT INTO factura(fecha, cod_cliente, cod_forma_pago, cod_plan, cod_vendedor) VALUES ('10/02/2021', 6, 3, 2, 2);
+	INSERT INTO detalle_factura(cantidad, precio_venta, cod_factura, cod_producto) VALUES ( 2, 370000, 21, 7);
+	INSERT INTO detalle_factura(cantidad, precio_venta, cod_factura, cod_producto) VALUES ( 3, 280000, 21, 3);
+
+	INSERT INTO factura(fecha, cod_cliente, cod_forma_pago, cod_plan, cod_vendedor) VALUES ('10/02/2021', 4, 4, 3, 2);
+	INSERT INTO detalle_factura(cantidad, precio_venta, cod_factura, cod_producto) VALUES ( 3, 3500000, 25, 3);
+	INSERT INTO detalle_factura(cantidad, precio_venta, cod_factura, cod_producto) VALUES ( 5, 20000, 25, 6);
+
+INSERT INTO factura(fecha, cod_cliente, cod_forma_pago, cod_plan, cod_vendedor) VALUES ('10/02/2021', 7, 4, 3, 2);
+	INSERT INTO detalle_factura(cantidad, precio_venta, cod_factura, cod_producto) VALUES ( 3, 160000, 26, 7);
+	INSERT INTO detalle_factura(cantidad, precio_venta, cod_factura, cod_producto) VALUES ( 5, 480000, 26, 1);
+
+
+
+
+
 
 ---PROCEDIMIENTOS PARA GRAFICOS
+
+
+
+
+
 
 create procedure PA_CAROS_BARATOS
 as

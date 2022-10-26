@@ -72,7 +72,7 @@
             this.ClientSize = new System.Drawing.Size(899, 481);
             this.Controls.Add(this.reportViewer1);
             this.Name = "FrmProdCaros";
-            this.Text = "FrmProdCaros";
+            this.Text = "Productos Caros";
             this.Load += new System.EventHandler(this.FrmProdCaros_Load);
             ((System.ComponentModel.ISupportInitialize)(this.productosSuperiorPromedioBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dtsReportesxsd)).EndInit();

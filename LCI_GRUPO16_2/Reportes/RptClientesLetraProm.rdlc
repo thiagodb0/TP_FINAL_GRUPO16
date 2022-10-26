@@ -85,7 +85,9 @@
                               <TextRuns>
                                 <TextRun>
                                   <Value>Codigo</Value>
-                                  <Style />
+                                  <Style>
+                                    <Color>White</Color>
+                                  </Style>
                                 </TextRun>
                               </TextRuns>
                               <Style />
@@ -115,7 +117,9 @@
                               <TextRuns>
                                 <TextRun>
                                   <Value>Cliente</Value>
-                                  <Style />
+                                  <Style>
+                                    <Color>White</Color>
+                                  </Style>
                                 </TextRun>
                               </TextRuns>
                               <Style />
@@ -145,7 +149,9 @@
                               <TextRuns>
                                 <TextRun>
                                   <Value>Total</Value>
-                                  <Style />
+                                  <Style>
+                                    <Color>White</Color>
+                                  </Style>
                                 </TextRun>
                               </TextRuns>
                               <Style />
@@ -175,7 +181,9 @@
                               <TextRuns>
                                 <TextRun>
                                   <Value>Promedio</Value>
-                                  <Style />
+                                  <Style>
+                                    <Color>White</Color>
+                                  </Style>
                                 </TextRun>
                               </TextRuns>
                               <Style />
@@ -205,7 +213,9 @@
                               <TextRuns>
                                 <TextRun>
                                   <Value>Primera</Value>
-                                  <Style />
+                                  <Style>
+                                    <Color>White</Color>
+                                  </Style>
                                 </TextRun>
                               </TextRuns>
                               <Style />
@@ -240,7 +250,9 @@
                               <TextRuns>
                                 <TextRun>
                                   <Value>=Fields!Codigo.Value</Value>
-                                  <Style />
+                                  <Style>
+                                    <Color>White</Color>
+                                  </Style>
                                 </TextRun>
                               </TextRuns>
                               <Style />
@@ -270,7 +282,9 @@
                               <TextRuns>
                                 <TextRun>
                                   <Value>=Fields!Cliente.Value</Value>
-                                  <Style />
+                                  <Style>
+                                    <Color>White</Color>
+                                  </Style>
                                 </TextRun>
                               </TextRuns>
                               <Style />
@@ -300,7 +314,9 @@
                               <TextRuns>
                                 <TextRun>
                                   <Value>=Fields!Total.Value</Value>
-                                  <Style />
+                                  <Style>
+                                    <Color>White</Color>
+                                  </Style>
                                 </TextRun>
                               </TextRuns>
                               <Style />
@@ -330,7 +346,9 @@
                               <TextRuns>
                                 <TextRun>
                                   <Value>=Fields!Promedio.Value</Value>
-                                  <Style />
+                                  <Style>
+                                    <Color>White</Color>
+                                  </Style>
                                 </TextRun>
                               </TextRuns>
                               <Style />
@@ -360,7 +378,9 @@
                               <TextRuns>
                                 <TextRun>
                                   <Value>=Fields!Primera.Value</Value>
-                                  <Style />
+                                  <Style>
+                                    <Color>White</Color>
+                                  </Style>
                                 </TextRun>
                               </TextRuns>
                               <Style />
@@ -410,6 +430,7 @@
               <Border>
                 <Style>None</Style>
               </Border>
+              <Color>White</Color>
             </Style>
           </Tablix>
           <Chart Name="Chart1">
@@ -757,7 +778,7 @@
               </Style>
             </ChartNoDataMessage>
             <DataSetName>DataSet1</DataSetName>
-            <Top>1.48223cm</Top>
+            <Top>1.53669cm</Top>
             <Height>5.635cm</Height>
             <Width>16.95305cm</Width>
             <ZIndex>1</ZIndex>
@@ -766,13 +787,18 @@
                 <Color>LightGrey</Color>
                 <Style>None</Style>
               </Border>
-              <BackgroundColor>White</BackgroundColor>
+              <BackgroundColor>LightGrey</BackgroundColor>
               <BackgroundGradientType>None</BackgroundGradientType>
             </Style>
           </Chart>
         </ReportItems>
         <Height>3.0735in</Height>
-        <Style />
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <BackgroundColor>Gray</BackgroundColor>
+        </Style>
       </Body>
       <Width>6.67443in</Width>
       <Page>

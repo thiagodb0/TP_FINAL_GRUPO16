@@ -35,5 +35,15 @@ namespace LCI_GRUPO16_2.Presentacion
             this.reportViewer1.RefreshReport();
 
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void reportViewer1_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

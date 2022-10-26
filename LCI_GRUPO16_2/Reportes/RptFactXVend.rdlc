@@ -385,7 +385,7 @@
             <Paragraph>
               <TextRuns>
                 <TextRun>
-                  <Value>Total y Promedio facturado por vendedor</Value>
+                  <Value>Total y Promedio facturado por mes por vendedor</Value>
                   <Style>
                     <FontFamily>Microsoft YaHei</FontFamily>
                     <FontSize>16pt</FontSize>

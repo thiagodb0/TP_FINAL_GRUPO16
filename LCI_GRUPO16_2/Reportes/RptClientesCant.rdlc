@@ -32,7 +32,9 @@
                           <TextRuns>
                             <TextRun>
                               <Value>cliente</Value>
-                              <Style />
+                              <Style>
+                                <Color>White</Color>
+                              </Style>
                             </TextRun>
                           </TextRuns>
                           <Style />
@@ -62,7 +64,9 @@
                           <TextRuns>
                             <TextRun>
                               <Value>calle</Value>
-                              <Style />
+                              <Style>
+                                <Color>White</Color>
+                              </Style>
                             </TextRun>
                           </TextRuns>
                           <Style />
@@ -92,7 +96,9 @@
                           <TextRuns>
                             <TextRun>
                               <Value>altura</Value>
-                              <Style />
+                              <Style>
+                                <Color>White</Color>
+                              </Style>
                             </TextRun>
                           </TextRuns>
                           <Style />
@@ -122,7 +128,9 @@
                           <TextRuns>
                             <TextRun>
                               <Value>barrio</Value>
-                              <Style />
+                              <Style>
+                                <Color>White</Color>
+                              </Style>
                             </TextRun>
                           </TextRuns>
                           <Style />
@@ -157,7 +165,9 @@
                           <TextRuns>
                             <TextRun>
                               <Value>=Fields!cliente.Value</Value>
-                              <Style />
+                              <Style>
+                                <Color>White</Color>
+                              </Style>
                             </TextRun>
                           </TextRuns>
                           <Style />
@@ -187,7 +197,9 @@
                           <TextRuns>
                             <TextRun>
                               <Value>=Fields!calle.Value</Value>
-                              <Style />
+                              <Style>
+                                <Color>White</Color>
+                              </Style>
                             </TextRun>
                           </TextRuns>
                           <Style />
@@ -217,7 +229,9 @@
                           <TextRuns>
                             <TextRun>
                               <Value>=Fields!altura.Value</Value>
-                              <Style />
+                              <Style>
+                                <Color>White</Color>
+                              </Style>
                             </TextRun>
                           </TextRuns>
                           <Style />
@@ -247,7 +261,9 @@
                           <TextRuns>
                             <TextRun>
                               <Value>=Fields!barrio.Value</Value>
-                              <Style />
+                              <Style>
+                                <Color>White</Color>
+                              </Style>
                             </TextRun>
                           </TextRuns>
                           <Style />
@@ -300,7 +316,12 @@
       </Tablix>
     </ReportItems>
     <Height>2in</Height>
-    <Style />
+    <Style>
+      <Border>
+        <Style>None</Style>
+      </Border>
+      <BackgroundColor>Gray</BackgroundColor>
+    </Style>
   </Body>
   <Width>6.5in</Width>
   <Page>

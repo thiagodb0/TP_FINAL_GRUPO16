@@ -70,9 +70,9 @@
             this.label1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.label1.Location = new System.Drawing.Point(9, 10);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(284, 22);
+            this.label1.Size = new System.Drawing.Size(279, 22);
             this.label1.TabIndex = 1;
-            this.label1.Text = "indique el codigo del vendedor";
+            this.label1.Text = "indique el legajo del vendedor";
             // 
             // btnBuscar
             // 

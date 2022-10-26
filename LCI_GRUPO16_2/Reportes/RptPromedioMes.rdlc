@@ -52,21 +52,21 @@
             <TablixBody>
               <TablixColumns>
                 <TablixColumn>
-                  <Width>4.2559cm</Width>
+                  <Width>4.3194cm</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>4.2559cm</Width>
+                  <Width>4.3194cm</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>4.2559cm</Width>
+                  <Width>4.3194cm</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>4.24884cm</Width>
+                  <Width>4.31234cm</Width>
                 </TablixColumn>
               </TablixColumns>
               <TablixRows>
                 <TablixRow>
-                  <Height>0.56825cm</Height>
+                  <Height>0.57883cm</Height>
                   <TablixCells>
                     <TablixCell>
                       <CellContents>
@@ -78,7 +78,9 @@
                               <TextRuns>
                                 <TextRun>
                                   <Value>Año</Value>
-                                  <Style />
+                                  <Style>
+                                    <Color>White</Color>
+                                  </Style>
                                 </TextRun>
                               </TextRuns>
                               <Style />
@@ -108,7 +110,9 @@
                               <TextRuns>
                                 <TextRun>
                                   <Value>Mes</Value>
-                                  <Style />
+                                  <Style>
+                                    <Color>White</Color>
+                                  </Style>
                                 </TextRun>
                               </TextRuns>
                               <Style />
@@ -138,7 +142,9 @@
                               <TextRuns>
                                 <TextRun>
                                   <Value>Total</Value>
-                                  <Style />
+                                  <Style>
+                                    <Color>White</Color>
+                                  </Style>
                                 </TextRun>
                               </TextRuns>
                               <Style />
@@ -168,7 +174,9 @@
                               <TextRuns>
                                 <TextRun>
                                   <Value>Promedio</Value>
-                                  <Style />
+                                  <Style>
+                                    <Color>White</Color>
+                                  </Style>
                                 </TextRun>
                               </TextRuns>
                               <Style />
@@ -191,7 +199,7 @@
                   </TablixCells>
                 </TablixRow>
                 <TablixRow>
-                  <Height>0.56825cm</Height>
+                  <Height>0.57883cm</Height>
                   <TablixCells>
                     <TablixCell>
                       <CellContents>
@@ -203,7 +211,9 @@
                               <TextRuns>
                                 <TextRun>
                                   <Value>=Fields!Año.Value</Value>
-                                  <Style />
+                                  <Style>
+                                    <Color>White</Color>
+                                  </Style>
                                 </TextRun>
                               </TextRuns>
                               <Style />
@@ -233,7 +243,9 @@
                               <TextRuns>
                                 <TextRun>
                                   <Value>=Fields!Mes.Value</Value>
-                                  <Style />
+                                  <Style>
+                                    <Color>White</Color>
+                                  </Style>
                                 </TextRun>
                               </TextRuns>
                               <Style />
@@ -263,7 +275,9 @@
                               <TextRuns>
                                 <TextRun>
                                   <Value>=Fields!Total.Value</Value>
-                                  <Style />
+                                  <Style>
+                                    <Color>White</Color>
+                                  </Style>
                                 </TextRun>
                               </TextRuns>
                               <Style />
@@ -293,7 +307,9 @@
                               <TextRuns>
                                 <TextRun>
                                   <Value>=Fields!Promedio.Value</Value>
-                                  <Style />
+                                  <Style>
+                                    <Color>White</Color>
+                                  </Style>
                                 </TextRun>
                               </TextRuns>
                               <Style />
@@ -336,8 +352,9 @@
               </TablixMembers>
             </TablixRowHierarchy>
             <DataSetName>DataSet1</DataSetName>
-            <Height>1.1365cm</Height>
-            <Width>17.01654cm</Width>
+            <Top>5.50333cm</Top>
+            <Height>1.15766cm</Height>
+            <Width>17.27054cm</Width>
             <Style>
               <Border>
                 <Style>None</Style>
@@ -702,24 +719,28 @@
               </Style>
             </ChartNoDataMessage>
             <DataSetName>DataSet1</DataSetName>
-            <Top>1.31289cm</Top>
             <Height>5.21167cm</Height>
-            <Width>17.01654cm</Width>
+            <Width>17.27054cm</Width>
             <ZIndex>1</ZIndex>
             <Style>
               <Border>
                 <Color>LightGrey</Color>
                 <Style>None</Style>
               </Border>
-              <BackgroundColor>White</BackgroundColor>
+              <BackgroundColor>Silver</BackgroundColor>
               <BackgroundGradientType>None</BackgroundGradientType>
             </Style>
           </Chart>
         </ReportItems>
         <Height>3.39017in</Height>
-        <Style />
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <BackgroundColor>Gray</BackgroundColor>
+        </Style>
       </Body>
-      <Width>6.69943in</Width>
+      <Width>6.79943in</Width>
       <Page>
         <PageHeight>29.7cm</PageHeight>
         <PageWidth>21cm</PageWidth>

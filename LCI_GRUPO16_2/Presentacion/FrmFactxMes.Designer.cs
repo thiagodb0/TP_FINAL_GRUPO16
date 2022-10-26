@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmFactxMes));
             Microsoft.Reporting.WinForms.ReportDataSource reportDataSource1 = new Microsoft.Reporting.WinForms.ReportDataSource();
             this.promedioMesBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.dtsReportesxsd = new LCI_GRUPO16_2.Datos.DtsReportesxsd();
@@ -60,50 +61,31 @@
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            resources.ApplyResources(this.label1, "label1");
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label1.Location = new System.Drawing.Point(13, 13);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(320, 16);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Ingrese entre los dos años que desea buscar";
             // 
             // label2
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            resources.ApplyResources(this.label2, "label2");
             this.label2.ForeColor = System.Drawing.SystemColors.Control;
-            this.label2.Location = new System.Drawing.Point(16, 47);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(43, 16);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Entre";
             // 
             // label3
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            resources.ApplyResources(this.label3, "label3");
             this.label3.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.label3.Location = new System.Drawing.Point(207, 47);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(15, 16);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "y";
             // 
             // TxtAnio1
             // 
-            this.TxtAnio1.Location = new System.Drawing.Point(83, 44);
+            resources.ApplyResources(this.TxtAnio1, "TxtAnio1");
             this.TxtAnio1.Name = "TxtAnio1";
-            this.TxtAnio1.Size = new System.Drawing.Size(100, 22);
-            this.TxtAnio1.TabIndex = 3;
             // 
             // TxtAnio2
             // 
-            this.TxtAnio2.Location = new System.Drawing.Point(248, 47);
+            resources.ApplyResources(this.TxtAnio2, "TxtAnio2");
             this.TxtAnio2.Name = "TxtAnio2";
-            this.TxtAnio2.Size = new System.Drawing.Size(100, 22);
-            this.TxtAnio2.TabIndex = 4;
             // 
             // reportViewer1
             // 
@@ -111,11 +93,9 @@
             reportDataSource1.Value = this.promedioMesBindingSource;
             this.reportViewer1.LocalReport.DataSources.Add(reportDataSource1);
             this.reportViewer1.LocalReport.ReportEmbeddedResource = "LCI_GRUPO16_2.Reportes.RptPromedioMes.rdlc";
-            this.reportViewer1.Location = new System.Drawing.Point(16, 114);
+            resources.ApplyResources(this.reportViewer1, "reportViewer1");
             this.reportViewer1.Name = "reportViewer1";
             this.reportViewer1.ServerReport.BearerToken = null;
-            this.reportViewer1.Size = new System.Drawing.Size(861, 505);
-            this.reportViewer1.TabIndex = 5;
             // 
             // promedioMesTableAdapter
             // 
@@ -123,11 +103,8 @@
             // 
             // BtnBuscar
             // 
-            this.BtnBuscar.Location = new System.Drawing.Point(400, 37);
+            resources.ApplyResources(this.BtnBuscar, "BtnBuscar");
             this.BtnBuscar.Name = "BtnBuscar";
-            this.BtnBuscar.Size = new System.Drawing.Size(159, 42);
-            this.BtnBuscar.TabIndex = 6;
-            this.BtnBuscar.Text = "Buscar";
             this.BtnBuscar.UseVisualStyleBackColor = true;
             this.BtnBuscar.Click += new System.EventHandler(this.BtnBuscar_Click);
             // 
@@ -139,20 +116,16 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::LCI_GRUPO16_2.Properties.Resources.Logo_Corporativo_Estudio_Elegante_Profesional_Blanco_Negro;
-            this.pictureBox1.Location = new System.Drawing.Point(616, -145);
+            resources.ApplyResources(this.pictureBox1, "pictureBox1");
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(399, 383);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 7;
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // FrmFactxMes
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.ClientSize = new System.Drawing.Size(894, 631);
             this.Controls.Add(this.BtnBuscar);
             this.Controls.Add(this.reportViewer1);
             this.Controls.Add(this.TxtAnio2);
@@ -161,8 +134,8 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "FrmFactxMes";
-            this.Text = "Factura Por Mes";
             this.Load += new System.EventHandler(this.FrmFactxMes_Load);
             ((System.ComponentModel.ISupportInitialize)(this.promedioMesBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dtsReportesxsd)).EndInit();

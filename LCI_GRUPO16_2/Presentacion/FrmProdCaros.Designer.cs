@@ -30,13 +30,23 @@
         {
             this.components = new System.ComponentModel.Container();
             Microsoft.Reporting.WinForms.ReportDataSource reportDataSource1 = new Microsoft.Reporting.WinForms.ReportDataSource();
-            this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
-            this.dtsReportesxsd = new LCI_GRUPO16_2.Datos.DtsReportesxsd();
             this.productosSuperiorPromedioBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.dtsReportesxsd = new LCI_GRUPO16_2.Datos.DtsReportesxsd();
+            this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
             this.productosSuperiorPromedioTableAdapter = new LCI_GRUPO16_2.Datos.DtsReportesxsdTableAdapters.ProductosSuperiorPromedioTableAdapter();
-            ((System.ComponentModel.ISupportInitialize)(this.dtsReportesxsd)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.productosSuperiorPromedioBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtsReportesxsd)).BeginInit();
             this.SuspendLayout();
+            // 
+            // productosSuperiorPromedioBindingSource
+            // 
+            this.productosSuperiorPromedioBindingSource.DataMember = "ProductosSuperiorPromedio";
+            this.productosSuperiorPromedioBindingSource.DataSource = this.dtsReportesxsd;
+            // 
+            // dtsReportesxsd
+            // 
+            this.dtsReportesxsd.DataSetName = "DtsReportesxsd";
+            this.dtsReportesxsd.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // reportViewer1
             // 
@@ -48,18 +58,8 @@
             this.reportViewer1.Location = new System.Drawing.Point(0, 0);
             this.reportViewer1.Name = "reportViewer1";
             this.reportViewer1.ServerReport.BearerToken = null;
-            this.reportViewer1.Size = new System.Drawing.Size(800, 450);
+            this.reportViewer1.Size = new System.Drawing.Size(899, 481);
             this.reportViewer1.TabIndex = 0;
-            // 
-            // dtsReportesxsd
-            // 
-            this.dtsReportesxsd.DataSetName = "DtsReportesxsd";
-            this.dtsReportesxsd.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // productosSuperiorPromedioBindingSource
-            // 
-            this.productosSuperiorPromedioBindingSource.DataMember = "ProductosSuperiorPromedio";
-            this.productosSuperiorPromedioBindingSource.DataSource = this.dtsReportesxsd;
             // 
             // productosSuperiorPromedioTableAdapter
             // 
@@ -69,13 +69,13 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(899, 481);
             this.Controls.Add(this.reportViewer1);
             this.Name = "FrmProdCaros";
             this.Text = "FrmProdCaros";
             this.Load += new System.EventHandler(this.FrmProdCaros_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dtsReportesxsd)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.productosSuperiorPromedioBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtsReportesxsd)).EndInit();
             this.ResumeLayout(false);
 
         }

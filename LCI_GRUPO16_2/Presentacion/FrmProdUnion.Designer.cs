@@ -39,10 +39,12 @@
             this.label2 = new System.Windows.Forms.Label();
             this.NumCantidad = new System.Windows.Forms.NumericUpDown();
             this.BtnBuscar = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.Produstos_no_vendidos_Y_VendidosBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dtsReportesxsd)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.produstosnovendidosYVendidosBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.NumCantidad)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // Produstos_no_vendidos_Y_VendidosBindingSource
@@ -58,10 +60,10 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft YaHei", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(13, 13);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(604, 46);
+            this.label1.Size = new System.Drawing.Size(556, 38);
             this.label1.TabIndex = 0;
             this.label1.Text = "Se mostraran primero aquellos que nunca se vendieron y luego aquellos \r\nque se ve" +
     "ndieron mas de la cantidad de veces especificada\r\n";
@@ -90,15 +92,16 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(14, 77);
+            this.label2.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(14, 75);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(120, 16);
+            this.label2.Size = new System.Drawing.Size(146, 19);
             this.label2.TabIndex = 2;
             this.label2.Text = "Cantidad de veces";
             // 
             // NumCantidad
             // 
-            this.NumCantidad.Location = new System.Drawing.Point(157, 77);
+            this.NumCantidad.Location = new System.Drawing.Point(188, 76);
             this.NumCantidad.Maximum = new decimal(new int[] {
             999999,
             0,
@@ -110,7 +113,8 @@
             // 
             // BtnBuscar
             // 
-            this.BtnBuscar.Location = new System.Drawing.Point(317, 70);
+            this.BtnBuscar.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.BtnBuscar.Location = new System.Drawing.Point(348, 69);
             this.BtnBuscar.Name = "BtnBuscar";
             this.BtnBuscar.Size = new System.Drawing.Size(75, 32);
             this.BtnBuscar.TabIndex = 4;
@@ -118,16 +122,29 @@
             this.BtnBuscar.UseVisualStyleBackColor = true;
             this.BtnBuscar.Click += new System.EventHandler(this.BtnBuscar_Click);
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::LCI_GRUPO16_2.Properties.Resources.Logo_Corporativo_Estudio_Elegante_Profesional_Blanco_Negro;
+            this.pictureBox1.Location = new System.Drawing.Point(586, -121);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(387, 337);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 5;
+            this.pictureBox1.TabStop = false;
+            // 
             // FrmProdUnion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.ClientSize = new System.Drawing.Size(847, 450);
             this.Controls.Add(this.BtnBuscar);
             this.Controls.Add(this.NumCantidad);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.reportViewer1);
             this.Controls.Add(this.label1);
+            this.Controls.Add(this.pictureBox1);
+            this.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.Name = "FrmProdUnion";
             this.Text = "FrmProdUnion";
             this.Load += new System.EventHandler(this.FrmProdUnion_Load);
@@ -135,6 +152,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.dtsReportesxsd)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.produstosnovendidosYVendidosBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.NumCantidad)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -151,5 +169,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.NumericUpDown NumCantidad;
         private System.Windows.Forms.Button BtnBuscar;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

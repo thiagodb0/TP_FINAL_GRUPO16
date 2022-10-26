@@ -24,5 +24,7 @@ namespace LCI_GRUPO16_2.Presentacion
 
             this.reportViewer1.RefreshReport();
         }
+
+        
     }
 }

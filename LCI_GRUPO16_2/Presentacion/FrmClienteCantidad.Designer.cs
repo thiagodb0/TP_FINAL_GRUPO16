@@ -32,6 +32,7 @@
             Microsoft.Reporting.WinForms.ReportDataSource reportDataSource1 = new Microsoft.Reporting.WinForms.ReportDataSource();
             this.clientesCantComprasBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.dtsReportesxsd = new LCI_GRUPO16_2.Datos.DtsReportesxsd();
+            this.clientesPromedioBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.label1 = new System.Windows.Forms.Label();
             this.TxtCantidad = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
@@ -39,8 +40,11 @@
             this.BtnBuscar = new System.Windows.Forms.Button();
             this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
             this.clientesCantComprasTableAdapter = new LCI_GRUPO16_2.Datos.DtsReportesxsdTableAdapters.clientesCantComprasTableAdapter();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.clientesCantComprasBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dtsReportesxsd)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.clientesPromedioBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // clientesCantComprasBindingSource
@@ -52,6 +56,11 @@
             // 
             this.dtsReportesxsd.DataSetName = "DtsReportesxsd";
             this.dtsReportesxsd.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // clientesPromedioBindingSource
+            // 
+            this.clientesPromedioBindingSource.DataMember = "ClientesPromedio";
+            this.clientesPromedioBindingSource.DataSource = this.dtsReportesxsd;
             // 
             // label1
             // 
@@ -66,7 +75,7 @@
             // 
             // TxtCantidad
             // 
-            this.TxtCantidad.Location = new System.Drawing.Point(217, 56);
+            this.TxtCantidad.Location = new System.Drawing.Point(220, 65);
             this.TxtCantidad.Name = "TxtCantidad";
             this.TxtCantidad.Size = new System.Drawing.Size(100, 22);
             this.TxtCantidad.TabIndex = 1;
@@ -76,18 +85,18 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft YaHei", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label2.Location = new System.Drawing.Point(5, 56);
+            this.label2.Location = new System.Drawing.Point(8, 65);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(176, 19);
+            this.label2.Size = new System.Drawing.Size(160, 19);
             this.label2.TabIndex = 2;
-            this.label2.Text = "Cliente que vino menos de ";
+            this.label2.Text = "Cliente que vino mas de ";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label3.Location = new System.Drawing.Point(347, 56);
+            this.label3.Location = new System.Drawing.Point(350, 65);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(50, 20);
             this.label3.TabIndex = 3;
@@ -95,7 +104,7 @@
             // 
             // BtnBuscar
             // 
-            this.BtnBuscar.Location = new System.Drawing.Point(439, 49);
+            this.BtnBuscar.Location = new System.Drawing.Point(442, 58);
             this.BtnBuscar.Name = "BtnBuscar";
             this.BtnBuscar.Size = new System.Drawing.Size(93, 37);
             this.BtnBuscar.TabIndex = 4;
@@ -109,15 +118,25 @@
             reportDataSource1.Value = this.clientesCantComprasBindingSource;
             this.reportViewer1.LocalReport.DataSources.Add(reportDataSource1);
             this.reportViewer1.LocalReport.ReportEmbeddedResource = "LCI_GRUPO16_2.Reportes.RptClientesCant.rdlc";
-            this.reportViewer1.Location = new System.Drawing.Point(12, 92);
+            this.reportViewer1.Location = new System.Drawing.Point(13, 105);
             this.reportViewer1.Name = "reportViewer1";
             this.reportViewer1.ServerReport.BearerToken = null;
-            this.reportViewer1.Size = new System.Drawing.Size(817, 350);
+            this.reportViewer1.Size = new System.Drawing.Size(817, 334);
             this.reportViewer1.TabIndex = 5;
             // 
             // clientesCantComprasTableAdapter
             // 
             this.clientesCantComprasTableAdapter.ClearBeforeFill = true;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::LCI_GRUPO16_2.Properties.Resources.Logo_Corporativo_Estudio_Elegante_Profesional_Blanco_Negro;
+            this.pictureBox1.Location = new System.Drawing.Point(552, -115);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(391, 328);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 6;
+            this.pictureBox1.TabStop = false;
             // 
             // FrmClienteCantidad
             // 
@@ -131,11 +150,14 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.TxtCantidad);
             this.Controls.Add(this.label1);
+            this.Controls.Add(this.pictureBox1);
             this.Name = "FrmClienteCantidad";
             this.Text = "FrmClienteCantidad";
             this.Load += new System.EventHandler(this.FrmClienteCantidad_Load);
             ((System.ComponentModel.ISupportInitialize)(this.clientesCantComprasBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dtsReportesxsd)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.clientesPromedioBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -152,5 +174,7 @@
         private System.Windows.Forms.BindingSource clientesCantComprasBindingSource;
         private Datos.DtsReportesxsd dtsReportesxsd;
         private Datos.DtsReportesxsdTableAdapters.clientesCantComprasTableAdapter clientesCantComprasTableAdapter;
+        private System.Windows.Forms.BindingSource clientesPromedioBindingSource;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

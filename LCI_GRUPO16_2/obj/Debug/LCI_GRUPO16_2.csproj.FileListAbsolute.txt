@@ -64,10 +64,10 @@ C:\Users\Thiago\OneDrive\Documentos\Trabajo LCI grupo16\LCI_GRUPO16_2\obj\Debug\
 C:\Users\Thiago\OneDrive\Documentos\Trabajo LCI grupo16\LCI_GRUPO16_2\obj\Debug\LCI_GRUPO16_2.csproj.CopyComplete
 C:\Users\Thiago\OneDrive\Documentos\Trabajo LCI grupo16\LCI_GRUPO16_2\obj\Debug\LCI_GRUPO16_2.exe
 C:\Users\Thiago\OneDrive\Documentos\Trabajo LCI grupo16\LCI_GRUPO16_2\obj\Debug\LCI_GRUPO16_2.pdb
-C:\Users\Thiago\OneDrive\Documentos\Trabajo LCI grupo16\LCI_GRUPO16_2\obj\Debug\LCI_GRUPO16_2.Presentacion.FrmClientesLetra.resources
 C:\Users\Thiago\OneDrive\Documentos\Trabajo LCI grupo16\LCI_GRUPO16_2\obj\Debug\LCI_GRUPO16_2.Presentacion.FrmAutosNoVend.resources
 C:\Users\Thiago\OneDrive\Documentos\Trabajo LCI grupo16\LCI_GRUPO16_2\obj\Debug\LCI_GRUPO16_2.Presentacion.FrmProdUnion.resources
 C:\Users\Thiago\OneDrive\Documentos\Trabajo LCI grupo16\LCI_GRUPO16_2\obj\Debug\LCI_GRUPO16_2.Presentacion.FrmProdCaros.resources
 C:\Users\Thiago\OneDrive\Documentos\Trabajo LCI grupo16\LCI_GRUPO16_2\obj\Debug\LCI_GRUPO16_2.Presentacion.FrmFechaVendedorescs.resources
 C:\Users\Thiago\OneDrive\Documentos\Trabajo LCI grupo16\LCI_GRUPO16_2\obj\Debug\LCI_GRUPO16_2.Presentacion.FrmFactVendedor.resources
 C:\Users\Thiago\OneDrive\Documentos\Trabajo LCI grupo16\LCI_GRUPO16_2\obj\Debug\LCI_GRUPO16_2.Presentacion.FrmFactxMes.resources
+C:\Users\Thiago\OneDrive\Documentos\Trabajo LCI grupo16\LCI_GRUPO16_2\obj\Debug\LCI_GRUPO16_2.Presentacion.FrmClientesPromedioLetra.resources

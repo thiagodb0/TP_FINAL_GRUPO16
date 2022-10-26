@@ -32,7 +32,7 @@ namespace LCI_GRUPO16_2
 
         private void promedioPorNombreToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            FrmClientesLetra frm = new FrmClientesLetra();
+            FrmClientesPromedioLetra frm = new FrmClientesPromedioLetra();
             frm.ShowDialog();
         }
 

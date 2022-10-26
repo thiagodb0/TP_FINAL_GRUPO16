@@ -291,7 +291,7 @@
         </TablixRowHierarchy>
         <DataSetName>DataSet1</DataSetName>
         <Height>1.3905cm</Height>
-        <Width>16.51cm</Width>
+        <Width>16.50999cm</Width>
         <Style>
           <Border>
             <Style>None</Style>
@@ -302,7 +302,7 @@
     <Height>2in</Height>
     <Style />
   </Body>
-  <Width>6.5in</Width>
+  <Width>6.50833in</Width>
   <Page>
     <PageHeight>29.7cm</PageHeight>
     <PageWidth>21cm</PageWidth>

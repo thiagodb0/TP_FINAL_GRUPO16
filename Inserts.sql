@@ -2593,15 +2593,19 @@ INSERT INTO factura(fecha, cod_cliente, cod_forma_pago, cod_plan, cod_vendedor) 
 INSERT INTO factura(fecha, cod_cliente, cod_forma_pago, cod_plan, cod_vendedor) VALUES ('19/11/2021', 3, 2, 6, 1);
 
 ----------Producto----------
-INSERT INTO productos(cod_producto, descripcion, pre_unitario, cod_tipo_prod, stock, stock_min, cod_modelo, cod_marca) VALUES (1, '308', 10000, 2, 5000, 300, 1, 13);
+
+INSERT INTO productos(cod_producto, descripcion, pre_unitario, cod_tipo_prod, stock, stock_min, cod_modelo, cod_marca) VALUES (1, 'Filtro de aire', 10000, 2, 5000, 300, 1, 13);
 INSERT INTO productos(cod_producto, descripcion, pre_unitario, cod_tipo_prod, stock, stock_min, cod_modelo, cod_marca) VALUES (2, 'Clase SL', 4000000, 1, 60, 3, 8, 11);
-INSERT INTO productos(cod_producto, descripcion, pre_unitario, cod_tipo_prod, stock, stock_min, cod_modelo, cod_marca) VALUES (3, 'Fiorino', 55000, 2, 6000, 200, 19, 6);
-INSERT INTO productos(cod_producto, descripcion, pre_unitario, cod_tipo_prod, stock, stock_min, cod_modelo, cod_marca) VALUES (4, 'Partner', 45000, 2, 5000, 500, 2, 13);
-INSERT INTO productos(cod_producto, descripcion, pre_unitario, cod_tipo_prod, stock, stock_min, cod_modelo, cod_marca) VALUES (5, '4008', 40000, 2, 7000, 300, 4, 13);
-INSERT INTO productos(cod_producto, descripcion, pre_unitario, cod_tipo_prod, stock, stock_min, cod_modelo, cod_marca) VALUES (6, 'Clase G', 25000, 2, 10000, 300, 9, 11);
-INSERT INTO productos(cod_producto, descripcion, pre_unitario, cod_tipo_prod, stock, stock_min, cod_modelo, cod_marca) VALUES (7, 'Clase S', 300000, 2, 8000, 200, 10, 11);
+INSERT INTO productos(cod_producto, descripcion, pre_unitario, cod_tipo_prod, stock, stock_min, cod_modelo, cod_marca) VALUES (3, 'Piston', 55000, 2, 6000, 200, 19, 6);
+INSERT INTO productos(cod_producto, descripcion, pre_unitario, cod_tipo_prod, stock, stock_min, cod_modelo, cod_marca) VALUES (4, 'Valvula de aceite', 45000, 2, 5000, 500, 2, 13);
+INSERT INTO productos(cod_producto, descripcion, pre_unitario, cod_tipo_prod, stock, stock_min, cod_modelo, cod_marca) VALUES (5, 'Optica trasera', 40000, 2, 7000, 300, 4, 13);
+INSERT INTO productos(cod_producto, descripcion, pre_unitario, cod_tipo_prod, stock, stock_min, cod_modelo, cod_marca) VALUES (6, 'Fusible', 25000, 2, 10000, 300, 9, 11);
+INSERT INTO productos(cod_producto, descripcion, pre_unitario, cod_tipo_prod, stock, stock_min, cod_modelo, cod_marca) VALUES (7, 'Pastilla de Freno', 300000, 2, 8000, 200, 10, 11);
 INSERT INTO productos(cod_producto, descripcion, pre_unitario, cod_tipo_prod, stock, stock_min, cod_modelo, cod_marca) VALUES (8, 'Punto', 2000000, 1, 100, 30, 14, 6);
 INSERT INTO productos(cod_producto, descripcion, pre_unitario, cod_tipo_prod, stock, stock_min, cod_modelo, cod_marca) VALUES (9, 'Pulsar', 2700000, 1, 190, 70, 7, 12);
+
+
+
 
 ---------Detalles------------
 select * from detalle_factura
@@ -2616,3 +2620,20 @@ INSERT INTO detalle_factura(cantidad, precio_venta, cod_factura, cod_producto) V
 INSERT INTO detalle_factura(cantidad, precio_venta, cod_factura, cod_producto) VALUES ( 3, 6000000, 6, 8);
 INSERT INTO detalle_factura(cantidad, precio_venta, cod_factura, cod_producto) VALUES ( 4, 16000000, 5, 2);
 INSERT INTO detalle_factura(cantidad, precio_venta, cod_factura, cod_producto) VALUES ( 3, 30000, 7, 1);
+
+
+---PROCEDIMIENTOS PARA GRAFICOS
+
+create procedure PA_CAROS_BARATOS
+as
+begin
+declare @cantCaros int
+declare @cantBaratos int
+select @cantCaros = count(cod_producto) from productos where pre_unitario > ( select avg(pre_unitario) from productos)
+select @cantBaratos = count(cod_producto) from productos where pre_unitario < ( select avg(pre_unitario) from productos)
+end
+select @cantCaros, @cantBaratos
+
+exec PA_CAROS_BARATOS
+
+

@@ -75,6 +75,12 @@
     <Compile Include="Presentacion\FrmAutosNoVend.Designer.cs">
       <DependentUpon>FrmAutosNoVend.cs</DependentUpon>
     </Compile>
+    <Compile Include="Presentacion\FrmClientesPromedioLetra.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentacion\FrmClientesPromedioLetra.Designer.cs">
+      <DependentUpon>FrmClientesPromedioLetra.cs</DependentUpon>
+    </Compile>
     <Compile Include="Presentacion\FrmFactVendedor.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -105,12 +111,6 @@
     <Compile Include="Presentacion\FrmClienteCantidad.Designer.cs">
       <DependentUpon>FrmClienteCantidad.cs</DependentUpon>
     </Compile>
-    <Compile Include="Presentacion\FrmClientesLetra.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Presentacion\FrmClientesLetra.Designer.cs">
-      <DependentUpon>FrmClientesLetra.cs</DependentUpon>
-    </Compile>
     <Compile Include="Presentacion\FrmProdCaros.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -129,6 +129,9 @@
     <EmbeddedResource Include="Presentacion\FrmAutosNoVend.resx">
       <DependentUpon>FrmAutosNoVend.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\FrmClientesPromedioLetra.resx">
+      <DependentUpon>FrmClientesPromedioLetra.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Presentacion\FrmFactVendedor.resx">
       <DependentUpon>FrmFactVendedor.cs</DependentUpon>
     </EmbeddedResource>
@@ -143,9 +146,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Presentacion\FrmClienteCantidad.resx">
       <DependentUpon>FrmClienteCantidad.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Presentacion\FrmClientesLetra.resx">
-      <DependentUpon>FrmClientesLetra.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Presentacion\FrmProdCaros.resx">
       <DependentUpon>FrmProdCaros.cs</DependentUpon>
@@ -165,7 +165,7 @@
     </Compile>
     <EmbeddedResource Include="Reportes\RptAutosNoVend.rdlc" />
     <EmbeddedResource Include="Reportes\RptClientesCant.rdlc" />
-    <EmbeddedResource Include="Reportes\RptClientesPromedio.rdlc" />
+    <EmbeddedResource Include="Reportes\RptClientesLetraProm.rdlc" />
     <EmbeddedResource Include="Reportes\RptFactXVend.rdlc" />
     <EmbeddedResource Include="Reportes\RptFechaVendedores.rdlc" />
     <EmbeddedResource Include="Reportes\RptProdPromedio.rdlc" />
@@ -198,6 +198,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\C.jpg" />
+    <None Include="Resources\Logo Corporativo Estudio Elegante Profesional Blanco Negro.jpg" />
     <Content Include="SqlServerTypes\readme.htm" />
     <Content Include="SqlServerTypes\x64\msvcr120.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>

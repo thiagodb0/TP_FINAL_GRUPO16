@@ -69,5 +69,15 @@ namespace LCI_GRUPO16_2.Properties {
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Logo_Corporativo_Estudio_Elegante_Profesional_Blanco_Negro {
+            get {
+                object obj = ResourceManager.GetObject("Logo Corporativo Estudio Elegante Profesional Blanco Negro", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }

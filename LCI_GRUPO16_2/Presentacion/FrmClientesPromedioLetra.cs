@@ -10,30 +10,30 @@ using System.Windows.Forms;
 
 namespace LCI_GRUPO16_2.Presentacion
 {
-    public partial class FrmClientesLetra : Form
+    public partial class FrmClientesPromedioLetra : Form
     {
-        public FrmClientesLetra()
+        public FrmClientesPromedioLetra()
         {
             InitializeComponent();
         }
 
         public string nombre { get; set; }
-        private void FrmClientesLetra_Load(object sender, EventArgs e)
+        private void FrmClientesPromedioLetra_Load(object sender, EventArgs e)
         {
+            nombre = string.Empty;
             // TODO: esta línea de código carga datos en la tabla 'dtsReportesxsd.ClientesPromedio' Puede moverla o quitarla según sea necesario.
-            nombre = String.Empty;
             this.clientesPromedioTableAdapter.Fill(this.dtsReportesxsd.ClientesPromedio,nombre);
 
             this.reportViewer1.RefreshReport();
         }
 
-        private void BtnBuscar_Click(object sender, EventArgs e)
+        private void TxtNombre_TextChanged(object sender, EventArgs e)
         {
-            nombre = TxtCliente.Text;
-
-            this.clientesPromedioTableAdapter.Fill(this.dtsReportesxsd.ClientesPromedio,nombre);
+            nombre = TxtNombre.Text;
+            this.clientesPromedioTableAdapter.Fill(this.dtsReportesxsd.ClientesPromedio, nombre);
 
             this.reportViewer1.RefreshReport();
+
         }
     }
 }
